@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[UTF8]{ctex}
+\newtheorem{theorem}{定理}
+\newtheorem{example}{例}
+\newtheorem{definition}{定义}
+\newtheorem{lemma}{引理}
+\newtheorem{proposition}{命题}
+\newtheorem{corollary}{推论}
+\newtheorem{proof}{证明}
+\usepackage{amsmath}
+\usepackage{yfonts}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{ltxtable}
+\usepackage{diagbox}
+\usepackage{amstext}%公式中加入文字
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{epigraph}
+\usepackage{amssymb,dsfont}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{flowchart}
+\title{记号}
+\author{sheldonshelock6 }
+\date{May 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+群$(G,\circ)$是由集合$G$和二元运算"$\circ$"构成的，符合以下四个性质的数学结构：
+\begin{itemize}
+    \item 	封闭性：	对于所有$G$中$a$, $b$，运算$a\cirbb$的结果也在$G$中。
+    \item    结合律：	对于所有$G$中的$a, b$和$c$，等式 $(a\circ b)\circ  c = a\circ (b\circ c)$成立。
+    \item 单位元：	存在$G$中的一个元素$e$，使得对于所有$G$中的元素$a$，总有等式
+$e\circ a = a\circ e = a$ 成立。
+\item 逆元：	对于每个$G$中的$a$，存在$G$中的一个元素$b$使得总有$a\circ b = b\circ a = e$，此处$e$为单位元。
+\end{itemize}
+环上的模的概念是对向量空间概念的推广，这里不需要要求向量空间中的标量的代数结构是数域，条件简化标量可以是环。
+因此，首先模和向量空间一样是加法交换群；在标量环元素和模元素之间定义了乘积运算，并且同样要求标量环元素和模元素的乘积是符合结合律的（在与环上定义的乘法运算一起用的时候）和分配律的。
+模结构与群的表示理论有着非常密切的联系。模结构也还是交换代数和同调代数的中心概念，它非常广泛的用于代数几何和代数拓扑等研究领域中。
+
+设 $G $是一个群, $V$ 是一个线性空间, 所谓 $G$ 在 $V$ 上的表示是指 $G$ 在 $V$ 上的一个线性作用, 也就是说对每一个 $g\in G,$ 都可以给一个 $V$ 上的线性变换 $\rho (g)$ 满足 $\rho(g_1g_2) = \rho(g_1)\rho(g_2)$
+对所有的 $g_1, g_2 \in G $都成立。 换一种定义方式, $G$在 $V$ 上的表示是一个群同态 $G \rightarrow GL(V )$. 这样的群表
+示我们一般记为 $(\rho, V )$, 或者简单记作 $\rho$, 或者有时也简记为 $V$ . 表示的维数就是 $V $的维数, 通常情况下记号是 $\mathbf{dim} V$ 或者 $\mathbf{dim} \rho$. 如果 $(\rho, V )$ 和 $(\tau, W)$ 是$ G$ 的表示, 他们之间的同态是一个线性映射$f : V \rightarrow W$ 满足 $f(\rho(g)v) = \tau (g)f(v)$ 对所有的 $g \in G $和 $v\in V $都成立 (也就是说线性映射和群作用交换). 两个表示同构是指存在一个同态 $f$, 使得它是线性空间的同构。
+
+Schwartz 函数指的是当$x$值趋向于无穷大时，函数值$f(x)$趋近0的速度“足够快”的函数。Schwartz空间的一个重要性质是傅里叶变换对于这个空间是一个自同构，也就是说，Schwartz函数进行傅里叶变换之后仍然会是Schwartz函数。这个性质使得可以对$\mathcal {S}$的对偶空间中的元素，也就是对偶Schwartz函数，来定义其傅里叶变换。同时因为Schwartz函数良好的性质，所以在表示论研究中经常Schwartz空间。
+
+分布，或者称之为Schwartz 分布或者为广义函数，是数学分析中最传统函数概念的推广。分布的概念是为了让在传统微积分中不可微分函数可以进行“微分”操作。一个函数$f$是将作用在定义域上的一点，把这个点“送到”值域中对应的点$f(x)$。而分布和函数的定义方式不同，它不再是简单的作用在一个点上。分布$g$是按照一定的规则作用在试验函数上，其中试验函数一般要求是有着紧支集的无穷可微复值函数（或者实值函数）。下面我们给出试验函数的正式定义和实值分布的正式定义：
+\begin{definition}
+首先约定记号$C^{k}(U)$，其中$k\in\{0,1,2,...,\infty\}$。$C^{k}(U)$为定义在$U$上所有$k$阶连续可微的实值函数组成的线性空间。$C_{c}^{k}(U)$为一个$f\in C^{k}(U)$且要求$f$有紧支集组成的集合。
+
+从而可以定义：$C^{\infty}(U)$为试验函数空间，其中$f\in C^{\infty}_{c}(U)$为定义在$U$上的试验函数。试验函数空间也可以记为$\mathcal{D}(U)$。
+\end{definition}
+\begin{proposition}
+若$T$是定义上试验函数空间$C^{k}(U)$上的一个线性泛函，那么$T$为一个分布当且仅当其满足以下等价条件：
+\begin{enumerate}
+    \item 对于每一个$U$的紧子集$K\subset U$，存在常数$C>0$且$N\in\mathbb{N}$，对于所有$f\in C^{\infty}(K)$要求：
+    $$|T(f)|\leq C \mathbf{sup}\{|\partial^{\alpha}f(x):x\in U,\ |\alpha|\leq N|\}$$
+    \item 对于每一个紧子集$K\in U$，存在一个常数$C_{K}>0$且$N_{K}\in\mathbf{N}$，则要求所有的函数$f\in C^{\infty}_{c}(U)$的支集包含于$k$，
+    $$|T(f)|\leq C_{K} \mathbf{sup}\{|\partial^{\alpha}f(x):x\in U,\ |\alpha|\leq N_{K}|\}$$
+    \item 对于任意一个紧子集$K\in U$，和任意一个定义在$C^{\infty}(K)$上的函数序列$\{f_{i}^{\infty}\}_{i=1}$，若对于所有多元数组$\alpha$,$\{\partial^{\alpha}f_{i}\}^{\infty}_{i=1}$在$K$上一致收敛于0，则$T(f_{i})\rightarrow 0$。
+\end{enumerate}
+\end{proposition}
+通过这三条性质可以判断一个线性泛函是不是一个分布，但是这仍然是非常局限的。在真正的实际应用过程，我们往往需要在试验函数空间$C^{\infty}_{c}(U)$或者$\mathcal{D}(U)$上定义拓扑，而在这样的空间$C^{\infty}_{c}(U)$或者$\mathcal{D}(U)$上定义典范拓扑，需要进一步定义凸拓扑线性空间等概念，在此不再一一解释。
+
+代数簇，亦作代数多样体，是代数几何学上多项式集合的公共零点解的集合。代数簇是代数几何的中心研究对象。
+历史上，代数基本定理建立了代数和几何之间的一个联系，它表明在复数域上的单变量的多项式由它的根的集合决定，而根集合是内在的几何对象。在此基础上，Hilbert's Nullstellensatz提供了多项式环的理想和仿射空间子集的对应关系。通过Hilbert's Nullstellensatz和相关结果，我们便能够用代数的技术手段来说明簇的几何概念，也能够用几何来更直观地展示环论中的问题。
+
+
+\end{document}
